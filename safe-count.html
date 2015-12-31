@@ -1,0 +1,393 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Safe Count app</title>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+		    #main #footer{
+		    	margin-left: 0px !important;
+
+		    }
+
+		    #sidePanelToggle {
+		    	display: none !important;
+		    }
+
+		    b {
+		    	font-weight: bold !important; 
+		    }
+
+		    .container {
+		    	padding:0 40px;
+		    }
+
+		    .left-aligned {
+		    	text-align: left !important;
+		    	margin-right:auto !important;
+		    	float:left;
+		    }
+		    .right-aligned {
+		    	text-align: right !important;
+		    	margin-left: auto !important; 
+		    	float:right;
+		    }
+		    .center-aligned {
+		    	text-align: center !important;
+		    	margin-left: auto !important; 
+		    	margin-right: auto !important; 
+		    }
+
+		    #main > section {
+		    	text-align: left; 
+
+		    }
+
+		    input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			.button
+				{
+			position: relative;
+			display: inline-block;
+    		border-radius: 0 !important; 
+    		padding: 10px 20px;
+			cursor: pointer;		
+			-moz-transition: background-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out;
+				}
+
+			input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			.button-intro
+				{
+			border: 1px solid white;
+    		color: #222629;
+    		background-color: rgba(34,38,41,0.3);	
+				}
+
+			input[type="button"]:hover,
+			input[type="submit"]:hover,
+			input[type="reset"]:hover,
+			.button-intro:hover
+				{
+			background-color: #222629;
+  			color: #fff;
+  			border: none;
+				}
+
+			.button-readmore {
+			 color: #fff;
+			 font-weight: bold; 
+			 border:none;
+			 background-color: #8ebebc;
+			}
+
+			.button-readmore:hover {
+			background-color: #222629;
+  			color: #fff;
+  			border: none;
+			}
+
+			div#footer {
+			background-color:#222629;
+			color:white;
+			}
+
+			section#top {
+			background-image: url("images/safecount-cover.jpg") !important;
+			background-position:top !important;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<!-- Main -->
+			<div id="main" style="margin-left: 0;">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover center-aligned">
+						<div class="container" style="width:70%;">
+
+							<header>
+								<h2 class="alt"><strong>Safe Count</strong><br>
+								</h2>
+								<p>UX design | user research</p>
+                                <br>
+							</header>
+							
+
+						</div>
+					</section>
+					
+					<section id="main-text">
+						<div class="container" style="width:70%;">
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-10">
+								<p>
+									This is a semester-long team project for my HCI core course. Our product Safe Count is an app that helps teachers and administrators manage students during emergencies/drills in the K-12 environment. Specifically, the app has two major objectives, i.e. helping teachers account for students and facilitating communication between teachers and administrators. In our prototype evaluation, all teacher participants reported liking the app and wanting to use it during an emergency or drill situation.
+	
+								</p>
+
+								<h3><b>
+									Process
+								</b></h3><br>
+
+								<p><b>Part 1: Exploring problem space</b></p>
+
+								<p>1. User descriptions</p>
+								<p>
+									Our user group is teachers in schools K-12. They are concerned with students’ safety and they have varying levels of familiarity with technology. They have college degrees. Their ages range from 22 to 70, so they span multiple generations. They might not have real experience with emergency, but they have received trainings on how to cope with emergency in schools.
+								</p>
+
+								<p>2. User needs</p>
+								<p>
+									Accounting for students and communicating with administrators and other teachers efficiently.
+								</p>
+
+								<p>3. Analysis of existing systems</p>
+								<p>
+									To asses the needs that our users (teachers, administrators, and security personnel in schools) may have, we conducted 9 semi-structured interviews (6 teachers, 1 coordinator, 1 supervisor, 1 principal). According to interviews, there are currently two ways of accounting for students in emergencies/drills. One is using head counting and colored cards to communicate attendance statuses. The other is using the class attendance system, which requires teachers bringing laptops with them. Issues exist in both approaches.
+								</p>
+
+								<ul style="list-style-type:decimal;margin-left:10%;">
+									<li>Head counting and colored cards
+										<ul style="list-style-type:square;">
+											<li>Pros:
+												<ul style="list-style-type:square;margin-left:5%;">
+													<li>Very easy to use and understand</li>
+													<li>Portable</li>
+													<li>Low cost</li>
+												</ul>
+											</li>
+											<li>Cons:
+												<ul style="list-style-type:square;margin-left:5%;">
+													<li>Unable to communicate concrete information</li>
+													<li>Statuses are too limited to indicate other situations, e.g. when a teacher has additional students from other classes</li>
+													<li>Difficult for substitute teachers without students' photos on attendance sheets</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>Class attendance computer system
+										<ul style="list-style-type:square;">
+											<li>Pros:
+												<ul style="list-style-type:square;margin-left:5%;">
+													<li>Connected to the attendance system (ruling out students who are absent)</li>
+													<li> Able to communicate detailed information
+													</li>
+												</ul>
+											</li>
+											<li>Cons:
+												<ul style="list-style-type:square;margin-left:5%;">
+													<li>Laptops can be cumbersome to carry around when teachers are evacuating</li>
+													<li>Subject to extreme weathers which affect Internet connections</li>
+													<li>Difficult to use without tables or desks</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+
+								<p>4. Task analysis</p>
+								<div class="images">
+										<img src="images/safecount-task-analysis.png" alt="Task analysis for SafeCount users" width="100%">
+								</div>
+								<br>
+
+								<p>5. Implications for product design</p>
+								<p style="margin-bottom:0;">We listed all usability and design criteria our product should meet to satisfy users’ needs:</p>
+									<ul style="list-style-type:decimal;margin-left:10%;">
+										<li><b>Accessible:</b> The product should be easily accessible to users wherever they are during emergencies.</li>
+										<li><b>Easy to use:</b>The system should be intuitive. The functions and design should not confuse users.</li>
+										<li><b>Efficient:</b>Users should be able to complete tasks in the least possible time and receive instant feedbacks after their actions.</li>
+										<li><b>Robust:</b>The system should be user-friendly to all teachers and administrators. Additionally, errors can be readily undone.</li>
+										<li><b>Affordable:</b>The products should not cost more than most schools or districts can afford.</li>
+										<li><b>Safe:</b>The product doesn’t pose security problems related to private information</li>
+										<li><b>Low dependency on Wi-Fi</b></li>
+									</ul>
+
+									<p><b>Part 2: Design alternatives</b></p>
+									<p>We each wrote down as many ideas as we have on sticky notes in limited time and used affinity diagram to organize them into groupings. Finally, we decided on the following three design alternatives: </p>
+									
+									<p>1. Tablet app</p>
+									<p>A special tablet will be stored by each classroom door, available for pickup during the emergency procedures. The teacher will take the tablet with them to the safe location, whether that’s outside or in the classroom. There, the teacher will do a headcount of the students.  At any point, teachers are able to send messages to the administrators or to specific teachers if necessary. Administrators are also able to send messages to individual teachers, and to all the faculty in regards to the status of the emergency/drill.</p>
+
+									<div class="images">
+										<img src="images/safecount-app.png" alt="First design alternative" width="100%">
+									</div>
+
+									<p style="margin-bottom:0;">Pros:</p>
+										<ul style="list-style-type:square;margin-left:10%;">
+											<li>Relatively high learnability</li>
+											<li>Students' photos can be included to help substitute teachers</li>
+											<li>Portable</li>
+											<li>Relative low cost</li>
+											<li>Can use 4G network when Wi-Fi doesn't work</li>
+										</ul>
+
+									<p style="margin-bottom:0;">Cons</p>
+										<ul style="list-style-type:square;margin-left:10%;">
+											<li>Not totally hands-free</li>
+											<li>Requires charging</li>
+											<li>Prone to typos<li/>
+										</ul>
+
+									<!--End of app-->
+									<p>2. Google Glass app</p>
+									<p>Teachers will pick up their Google Glass before going to the safe location with the students, and put it on as soon as possible. Once at the safe location, teachers will take individual pictures of all their students. The Google Glass will then cross-compare the images taken with the roster images, and figure out which students are missing. The Glass will then notify administrators of which students are missing, and will notify the teachers who are missing students if somebody else has accounted for them. The Google Glass can have pre-set messages that the administration can send to the teachers to inform them of the emergency/drill’s status.</p>
+
+									<div class="images">
+										<img src="images/safecount-glass-app.png" alt="Second design alternative demo" width="100%">
+									</div>
+
+							
+									<p style="margin-bottom:0;">Pros</p>
+										<ul style="list-style-type:square;margin-left:10%;">
+											<li>Hands-free</li>
+											<li>Can provide proofs of students' presence</li>
+											<li>Portable</li>
+											<li>Insusceptible to typos</li>
+											<li>Less steps</li>
+										</ul>
+									<p style="margin-bottom:0;">Cons</p>
+										<ul style="list-style-type:square;margin-left:10%;">
+											<li>Technology is not fully mature currently</li>
+											<li>Expensive</li>
+											<li>Response time might be long</li>
+											<li>Hard to put on for people already wearing glasses</li>
+											<li>Voice command might not be helpful in chaotic and noisy environment</li>
+										</ul>
+										<!--End of google glass app-->
+
+										<p>3. Jacket with wearable device attached</p>
+										<p>As they are leaving the classroom, the teacher will grab the jacket and put it on. The teacher can change the colors of the jacket to indicate the types of emergency situations, to represent their class, or to represent whether all students are present or not. In addition, students can easily see the teacher in the jacket, which will light up when necessary to provide lighting in dark environments or when lights go out. Once at the safe location, the teacher can interact with the jacket’s forearm display to account for students in a similar manner as with the Tablet app. A microphone and camera is also embedded into the jacket to help teachers record the emergency situations and communicate with a related third-party if necessary.</p>
+										
+										<div class="images">
+											<img src="images/safecount-jacket.jpg" alt="Third design alternative demo" width="100%">
+										</div>
+					
+										<p style="margin-bottom:0;">Pros</p>
+											<ul style="list-style-type:square;margin-left:10%;">
+												<li>Hands-free</li>
+												<li>Color indicators guide students in emergency situations</li>
+												<li>Works in dark environment</li>
+												<li>Works in a loud/noisy environment because most feedback is visual</li>
+												<li>Because teachers control their jacket, it is a closed system and can work with visual feedback when Wi-Fi or other communication systems fail</li>
+												<li>First-aid kit can be stored in the jacket</li>
+											</ul>
+										
+										<p style="margin-bottom:0;">Cons</p>
+											<ul style="list-style-type:square;margin-left:10%;">
+												<li>Different from most current systems, possibly a high learning curve</li>
+												<li>Expensive</li>
+												<li>Might be uncomfortable in hot weather, a lightweight design could make this less of a problem</li>
+											</ul>
+
+									<p><b>Part 3: Prototype</b></p>
+									<p>Based on feedback from both the poster session and informal interviews with teachers and administrators, we determined that our concept for a mobile application is the most appropriate solution. We built the prototype in Axure. Below is a demo video: </p>
+									<div class="center-aligned">
+										<iframe src="https://player.vimeo.com/video/149285612" width="500" height="753" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									</div>
+									<br>
+
+									<p><b>Part 4: Evaluation</b></p>
+									<p>1. What we did</p>
+									<p>We conducted a study to evaluate the likeability and efficiency of the tablet app. Participants pretended they had to account for students as they would during a fire drill. They then completed a questionnaire about their opinions on the tablet app, and next a group interview was conducted to receive more in-depth feedback on the application. The participants were 4 teachers (female) from Wheeler High School, in Marietta, GA. The participants were aged 55-64, and one of them was retired.
+									</p>
+
+									<p>2. Key findings</p>
+									<p>On average, participants took 7.13 minutes to complete all of the tasks. This includes more than sending the attendance report, which is the most important task.</p>
+									<p>The participants were very enthusiastic about the app and would like to have it available during emergency or drill situations. The most valued features of the app were the attendance, messaging, and missing student features -- the main features of the app. Privacy was also seen as a big advantage.
+									</p>
+									<p>Participants also made suggestions for improving the app. One issue with the app was that the text was too small in it, so the text would definitely need to be made larger. Participants also encouraged the addition of an emergency button and an “everybody here” button. When asked if there were any features that they would like to remove, the answer was a unanimous “no.” More user feedbacks are incorporated into the following design implications.</p>
+
+									<p>3. Design implications</p>
+									<p>In general, I changed the headbar color from blue to light grey to avoid distraction and enlarged the photos and fonts for better and faster recognition. </p>
+
+										<ul style="list-style-type:none;margin-left:5%;">
+											<img src="images/safecount-reviewattendance.png" alt="Design changes on screen for reviewing attendance" width="100%">
+											<li>Details of who found the missing students at what time are included on the Review Attendance screen. </li>
+										</ul>
+
+										<ul style="list-style-type:none;margin-left:5%;">
+											<img src="images/safecount-takeattendance.png" alt="Design changes on screen for taking attendance" width="100%">
+											<li>A shortcut, the "Select All" button, is added to mark every student present. In addition, a green outline is added to a tapped photo (meaning the student is present). </li>
+										</ul>
+
+										<ul style="list-style-type:none;margin-left:5%;">
+											<img src="images/safecount-homescreen.png" alt="Design changes on homescreen" width="100%">
+											<li>An emergency calling button is included on the home screen.</li>
+										</ul>
+
+							    <h3><b>
+									Reflections
+								</b></h3><br>
+
+								<p>This is the first time I participated in all four stages of product design from exploring the problem space to evaluation. I like this project a lot as we can apply the HCI principles and user research methods to a project that can make a difference in real life. Limited in development capacity, we prototyped in Axure instead of developing an actual app to test its usability. There are many inherent shortcomings with Axure, which proved to be roadblocks in our user testing. I wish I can command Swift to actually implement the prototype. And recruiting participants is more difficult than what we thought. A key lesson learned is to start recruiting as early as we defined target users and keep in touch with them throughout the design process. </p>
+
+
+								<div class="left-aligned">
+									<a href="http://shuli-liu-design.com/#portfolio" class="button button-readmore"><i class="fa fa-chevron-left"></i>&nbsp; <b class="hidden-xs">Back to portfolio</b></a> &nbsp; &nbsp;
+								</div>
+
+								<div class="right-aligned">
+									<a href="devex-career-account.html" class="button button-readmore"> <b class="hidden-xs">Next: Devex Career Account</b>&nbsp;<i class="fa fa-chevron-right"></i> </a>&nbsp; &nbsp;
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+
+
+		<!-- Footer -->
+			<div id="footer" style="margin-left:0px;padding:64px;">
+				<div class="container" style="width:70%;">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-6">
+				<!-- Copyright -->
+							<p class="left-aligned">
+								&copy; Shuli Liu 2015. All rights reserved.
+							</p>
+						</div>
+						<div class="col-md-2">
+							<!-- Social Icons -->
+							<ul class="right-aligned icons">
+								<li><a href="https://www.linkedin.com/in/shuliliu1991" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="mailto:shuli.lizzie.liu@gmail.com" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			</div>
+
+	</body>
+</html>
