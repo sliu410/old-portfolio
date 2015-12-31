@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Redesigning the Devex membership and services page</title>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+		    #main #footer{
+		    	margin-left: 0px !important;
+
+		    }
+
+		    #sidePanelToggle {
+		    	display: none !important;
+
+		    }
+
+		    b {
+		    	font-weight: bold !important; 
+		    }
+
+		    .container {
+		    	padding:0 40px;
+		    }
+
+		    .left-aligned {
+		    	text-align: left !important;
+		    	margin-right:auto !important;
+		    	float:left;
+		    }
+		    .right-aligned {
+		    	text-align: right !important;
+		    	margin-left: auto !important; 
+		    	float:right;
+		    }
+		    .center-aligned {
+		    	text-align: center !important;
+		    	margin-left: auto !important; 
+		    	margin-right: auto !important; 
+		    }
+
+		    #main > section {
+		    	text-align: left; 
+
+		    }
+
+		    input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			.button
+				{
+			position: relative;
+			display: inline-block;
+    		border-radius: 0 !important; 
+    		padding: 10px 20px;
+			cursor: pointer;		
+			-moz-transition: background-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out;
+				}
+
+			input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			.button-intro
+				{
+			border: 1px solid white;
+    		color: #222629;
+    		background-color: rgba(34,38,41,0.3);	
+				}
+
+			input[type="button"]:hover,
+			input[type="submit"]:hover,
+			input[type="reset"]:hover,
+			.button-intro:hover
+				{
+			background-color: #222629;
+  			color: #fff;
+  			border: none;
+				}
+
+			.button-readmore {
+			 color: #fff;
+			 font-weight: bold; 
+			 border:none;
+			 background-color: #8ebebc;
+			}
+
+			.button-readmore:hover {
+			background-color: #222629;
+  			color: #fff;
+  			border: none;
+			}
+
+			div#footer {
+			background-color:#222629;
+			color:white;
+			}
+
+			section#top {
+			background-image: url("images/ms-header-banner.jpg") !important;
+			}
+
+		</style>
+	</head>
+
+	<body>
+	  
+
+		<!-- Main --> 
+			<div id="main" style="margin-left:0;">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover center-aligned">
+						<div class="container" style="width:70%;">
+
+							<header>
+								<h2 class="alt"><strong>Redesigning the Devex membership<br>and services page</strong><br>
+								</h2>
+								<p>UX design | front-end development</p>
+                                <br>
+							</header>
+							
+
+						</div>
+					</section>
+					
+				<!-- Portfolio -->
+					<section id="main-text">
+						<div class="container" style="width:70%;">
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-10">
+								<p>
+									The project is to redesign the marketing and services page, which lists a variety of products and services of Devex. It is the main entrance point that can lead to all products’ marketing pages, so redesigning the page is of huge significance. I worked closely with a PM on this project and led interaction design and front-end development. 
+								</p>
+
+								<h3><b>
+									Problems and solutions
+								</b></h3><br>
+								<p>
+									I cannot show you the original version of the webpage, but I can list some of the previous problems and how I tackled them.
+								</p>
+
+								<p>
+									<b>Problem 1:</b> The original page had four categories of products and they were listed in six rows from top to bottom. This layout unintentionally delivered a sense of hierarchy within the products. Also, the products listed at the bottom often got neglected. 
+								</p>
+								<p>
+									<b>Solution 1:</b> We decided to arrange all products in one row, so users can choose their desired products at first glance. If a user wants to learn more about a certain category, by clicking “learn more” he/she can see the unfolding part that gives specific information. After chatting with marketing professionals, we did recognize that within each category some of the products were worth more attention, so we differentiated the “star products” by placing them in prominent places and coloring the icons and buttons. 
+								</p>
+
+								<img src="images/MandS-fourboxes.png" alt="four boxes" width="100%"/>
+
+								<hr>
+
+								<p>
+									<b>Problem 2:</b> The second problem was actually a setback of the first solution. In the new design, users needed one more step—clicking “learn more”—to go to a specific product. This is the trade-off we were facing. 
+								</p>
+								<p>
+									<b>Solution 2:</b> Under the first-level title we created four quick links that can lead users to the specific services immediately. Since the top priority of the webpage was to lead users to each product's or service’s marketing page, so we made sure the four quick links were not stealing the limelight but also were convenient for returned visitors. 
+								</p>
+
+								<img src="images/MandS-quicklinks.png" alt="quick links" width="100%"/>
+
+								<hr>
+
+								<p>
+									<b>Problem 3:</b> It was not easy to choose an appropriate and simplistic background image for the above-the-fold section. With the variety of products and services, no single image can represent the inclusive webpage. 
+								</p>
+								<p>
+									<b>Solution 3:</b> Since it was impossible to find a single photo, I decided to go for something abstract but sleek. I blurred an image and toned down its brightness. The contrast can also direct more attention to the title and the four main product categories. I also tried using white or solid-color background, but the visual result was not as good as a blurred image. 
+								</p>
+
+								<img src="images/MandS-abovethefold.png" alt="above the fold" width="100%"/>
+
+								<hr>
+
+								<p>
+									<b>Problem 4:</b> After I finished coding the webpage, we tested the mockups with several users and found a major problem that was not uncovered in the static version. The four “learn-more” buttons were close to the bottom edge of the screen, so users would not find the unfolding part that was below the buttons. 
+								</p>
+								<p>
+									<b>Solution 4:</b> I used the scrollTop function in javascript to make the unfolding part scroll to top of the screen. This simple function makes the user experience much more pleasant :)  
+								</p>
+
+								<img src="images/scrolltopcode.png" alt="Scrolltop script" width="100%"/>
+
+
+
+								<h3><b>Reflections</b></h3><br>
+								<p>
+									The major takeaway from this project is that we designers need to balance the pros and cons of each design. When confronted with trade-offs, we need to figure out ways to diminish most inconvenience in user experience. Also, polishing the final deliverable is very important. Some problems, especially those tiny ones, will not surface unless you test the final products. 
+								</p>
+								
+								<p>Check out the redesigned webpage <a href="https://pages.devex.com/membership-and-services" target="_blank">here</a>.</p>
+								<div class="left-aligned">
+									<a href="http://shuli-liu-design.com/#portfolio" class="button button-readmore"><i class="fa fa-chevron-left"></i>&nbsp; <b class="hidden-xs">Back to portfolio</b></a> &nbsp; &nbsp;
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+
+
+		<!-- Footer -->
+			<div id="footer" style="padding:64px;margin-left:0;">
+				<div class="container" style="width:70%;">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-6">
+				<!-- Copyright -->
+							<p>
+								&copy; Shuli Liu 2015. All rights reserved.
+							</p>
+						</div>
+						<div class="col-md-2">
+							<!-- Social Icons -->
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/shuliliu1991" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="mailto:shuli.lizzie.liu@gmail.com" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			</div>
+
+	</body>
+</html>
