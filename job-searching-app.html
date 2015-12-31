@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>HCI job searching app</title>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+		    #main #footer{
+		    	margin-left: 0px !important;
+
+		    }
+
+		    #sidePanelToggle {
+		    	display: none !important;
+		    }
+
+		    b {
+		    	font-weight: bold !important; 
+		    }
+
+		    .container {
+		    	padding:0 40px;
+		    }
+
+		    .left-aligned {
+		    	text-align: left !important;
+		    	margin-right:auto !important;
+		    	float:left;
+		    }
+		    .right-aligned {
+		    	text-align: right !important;
+		    	margin-left: auto !important; 
+		    	float:right;
+		    }
+		    .center-aligned {
+		    	text-align: center !important;
+		    	margin-left: auto !important; 
+		    	margin-right: auto !important; 
+		    }
+
+		    #main > section {
+		    	text-align: left; 
+
+		    }
+
+		    input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			.button
+				{
+			position: relative;
+			display: inline-block;
+    		border-radius: 0 !important; 
+    		padding: 10px 20px;
+			cursor: pointer;		
+			-moz-transition: background-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out;
+				}
+
+			input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			.button-intro
+				{
+			border: 1px solid white;
+    		color: #222629;
+    		background-color: rgba(34,38,41,0.3);	
+				}
+
+			input[type="button"]:hover,
+			input[type="submit"]:hover,
+			input[type="reset"]:hover,
+			.button-intro:hover
+				{
+			background-color: #222629;
+  			color: #fff;
+  			border: none;
+				}
+
+			.button-readmore {
+			 color: #fff;
+			 font-weight: bold; 
+			 border:none;
+			 background-color: #8ebebc;
+			}
+
+			.button-readmore:hover {
+			background-color: #222629;
+  			color: #fff;
+  			border: none;
+			}
+
+			div#footer {
+			background-color:#222629;
+			color:white;
+			}
+
+			section#top {
+			background-image: url("images/job-searching-cover.jpg") !important;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<!-- Main -->
+			<div id="main" style="margin-left: 0;">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover center-aligned">
+						<div class="container" style="width:70%;">
+
+							<header>
+								<h2 class="alt"><strong>HCIjobs</strong><br>
+								</h2>
+								<p>User research | UX design | UI design</p>
+                                <br>
+							</header>
+							
+
+						</div>
+					</section>
+					
+				<!-- Portfolio -->
+					<section id="main-text">
+						<div class="container" style="width:70%;">
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-10">
+								<p>
+									This is an individual class project that is done in two weeks. It is a mobile app that helps students in the HCI program of Georgia Tech land their dream jobs. Specifically, this app has four major functions, i.e. searching for jobs, managing jobs, connecting with alumni and marking events on calendar.
+								</p>
+
+								<h3><b>
+									Process
+								</b></h3><br>
+
+								<p><b>User research</b></p>
+
+								<p>1. Target users</p>
+								<p>
+									The target users are primarily students majoring in Human-Computer Interaction in Georgia Tech who are looking for career opportunities in the field. They have busy schedule and heavy class load. They do not have much time searching career opportunities or networking. They want to be able to find jobs efficiently and a tool that helps them manage the job searching process and career resources.
+								</p>
+
+								<p>2. Problem and user needs</p>
+								<p>
+									Currently there is no system in Georgia Tech that aims to help students find and manage jobs, connect with alumni and keep informed of career-related events. Not to mention an app that specifically targets HCI students. It’s common for students to search jobs online, keep track of their applications in a notebook, connect with alumni via the Student Alumni Association or LinkedIn and keep informed of career-related events by getting email notifications. Students need to manage these different elements at multiple locations. It is not an efficient and user-friendly process for students who are looking for career opportunities. This is where my proposed mobile app can come in. It aims at integrating resources of jobs, people and information into one place and acts as a personal assistant that makes it easier for students to find their dream jobs. The app can potentially include users from all majors if it gains success among HCI students.
+								</p>
+
+								<p>3. Persona</p>
+								<div class="images">
+										<img src="images/job-searching-persona.jpg" alt="Persona" width="100%"/>
+								</div><br>
+
+								<p>4. Task analysis</p>
+								<div class="images">
+										<img src="images/job-searching-task-analysis.png" alt="Task analysis" width="100%"/>
+								</div><br>
+
+								<p><b>Design work and iterations</b></p>
+
+								<p>1. Wireframes</p>
+								<div class="images">
+										<img src="images/job-searching-wireframes.png" alt="wireframes" width="100%"/>
+								</div><br>
+
+								<p>2. Cognitive walkthrough</p>
+								<p>
+									I asked a couple of my fellows in the HCI program who are actively looking for jobs to perform cognitive walkthroughs on the low-fidelity prototypes. Cognitive walkthrough is a quick and low-cost way of testing how well users perform standard tasks. They thought out loud as they performed each step of the assigned tasks. And I would ask them the following three questions as they went through each step:
+								</p>
+
+								<ul style="list-style-type:square;margin-left:10%;">
+									<li>Will users know what to do?</li>
+									<li>Will users see how to do it?</li>
+									<li>Will users understand from feedback whether the action was correct or not?</li>
+								</ul>
+
+								<p>
+									I found the following issues from the cognitive walkthroughs.</p>
+
+								<p>
+									1. The ASAP buttons for events were confusing and made the page unnecessarily crowded
+								</p>
+
+								<div class="images">
+										<img src="images/job-application-compare-events.png" alt="Compare events page" width="100%"/>
+								</div><br>
+
+								<p>
+									I deleted the ASAP buttons after realizing that most of the campus events don’t require ASAP and users only need to mark the events on their calendars.
+								</p>
+
+								<p>
+									2. Sequence of dates on calendar did not prioritize most approaching events 
+								</p>
+
+								<p>
+									This issue was also on the events page(see above). I rearranged the sequence of events on calendar because it makes more sense to put the most approaching or urgent events on the top. This design decision fits into users’ mental model of arranging to-do items. 
+								</p>
+
+								<p>
+									3. Position of the filter did not fit into users' habits 
+								</p>
+
+								<div class="images">
+										<img src="images/job-application-compare-filter.png" alt="Compare filter" width="100%"/>
+								</div><br>
+
+								<p>
+									The position of filter was initially placed next to the search bar. According to users’ feedbacks, this display countered their assumption that the button next to search bar should be “search.” In this case, tapping onto the filter button should activate a pop-over screen where users can choose categories of their interests. Filtering should be an alternative to searching by typing into the search bar. Thus, I moved the filter button to the upper right corner and changed it into an icon.
+								</p>
+
+								<p><b>3. Mockups</b></p>
+								<div class="images">
+										<img src="images/job-searching-mockup-flow.jpg" alt="Mockup flow" width="100%"/>
+								</div><br>
+
+								<h3><b>
+									Design rationale 
+								</b></h3><br>
+
+								<p><b>1. Learnability principle</b></p>
+								<p>Users are Master students specializing in Human-Computer Interaction and they are quick learners of operating on mobile apps. The app will provide users with a quick walkthrough tutorial to get them familiar with the interface and the workflow. The app has four clear icons at the bottom leading to the four most important tasks based on user requirements. Also, the interface follows the iOS design rules which are widely applied to a variety to apps, so users should not feel strange about the interfaces.</p>
+
+								<p><b>2. Flexibility principle</b></p>
+								<p>Users can accomplish their tasks in more than one way. For example, when users are searching for jobs, they can either enter key words like “UX designer,” or use the filter function if they are not sure which words to put into the search bar. And they have more flexibility in timing for accomplishing their tasks. There are multiple “save for later” options built into the app, which fits well into the busy lives of students. They don’t have to take actions immediately but can accomplish the same tasks when they are free.</p>
+
+								<p><b>3. Robustness principle</b></p>
+								<p>The system gives users feedbacks as they accomplish tasks. For example, after users tap onto the heart shape to save events, they should see a modal that ask if they would like to add the event to their local calendars.</p>
+
+								<h3><b>
+									Evaluation plan 
+								</b></h3><br>
+
+								<p>I am working on this part currently. Stay tuned :)</p>
+
+								<h3><b>
+									Reflections
+								</b></h3><br>
+
+								<p>This project challenged me to learn a lot of news things including iOS design guidelines, Sketch and Framer.js (although I switched to InVision due to its ease of managing multiple pages). If I have more time, I would like to create my prototype in Xcode, which is not only a more powerful tool for prototyping, but lessens the burden for app developers. Also, I would do more usability testing before jumping into the high-fidelity prototypes. And I would do a version for alumni who want to find talents and help students. If I had to trim down my design, I would leave out the events section. Compared to looking for jobs and connecting with alumni, seeking information about events has a lower priority.</p>
+
+								<p>Check out the prototype built with InVision <a href="https://projects.invisionapp.com/share/NM4XXFJ2S#/screens" target="_blank">here</a>.</p>
+
+								<div class="left-aligned">
+									<a href="http://shuli-liu-design.com/#portfolio" class="button button-readmore"><i class="fa fa-chevron-left"></i>&nbsp; <b class="hidden-xs">Back to portfolio</b></a> &nbsp; &nbsp;
+								</div>
+
+								<div class="right-aligned">
+									<a href="buzznow.html" class="button button-readmore"> <b class="hidden-xs">Next: BuzzNow app</b>&nbsp;<i class="fa fa-chevron-right"></i> </a>&nbsp; &nbsp;
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+
+
+		<!-- Footer -->
+			<div id="footer" style="margin-left:0px;padding:64px;">
+				<div class="container" style="width:70%;">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-6">
+				<!-- Copyright -->
+							<p class="left-aligned">
+								&copy; Shuli Liu 2015. All rights reserved.
+							</p>
+						</div>
+						<div class="col-md-2">
+							<!-- Social Icons -->
+							<ul class="right-aligned icons">
+								<li><a href="https://www.linkedin.com/in/shuliliu1991" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="mailto:shuli.lizzie.liu@gmail.com" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			</div>
+
+	</body>
+</html>
