@@ -1,0 +1,6 @@
+~ $ git clone https://github.com/shuli-liu/shuli-liu.github.io
+~ $ cd shuli-liu.github.io
+~ $ echo "Hello World" > index.html 
+~ $ git add --all
+~ $ git commit -m "Initial commit"
+~ $ git push
