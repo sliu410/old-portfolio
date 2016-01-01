@@ -648,7 +648,7 @@
 						#nav ul li a span:before
 						{
 							position: absolute;
-							left: 0;
+							left: 100%;
 							color: #41484c;
 							text-align: center;
 							width: 1.25em;
