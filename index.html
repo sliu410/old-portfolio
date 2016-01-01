@@ -688,7 +688,7 @@
     <div id="footer">
         <!-- Copyright -->
 
-        <p class="copyright">
+        <p id="copyright">
             <!--<li>&copy; Shuli Liu 2015. All rights reserved.</li>-->
         </p>
     </div>
@@ -713,7 +713,7 @@
         //updating the copyright automatically
         var today = new Date(); 
         var year = today.getFullYear(); 
-        document.getElementsByClassName(".copyright").innerHTML = "&copy; Shuli Liu " + String(year) + ". All rights reserved.";
+        document.getElementById("copyright").innerHTML = "&copy; Shuli Liu " + String(year) + ". All rights reserved.";
         })
         // })
 
