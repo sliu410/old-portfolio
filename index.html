@@ -711,8 +711,9 @@
         });
         
         //updating the copyright automatically
-        var today = new Date();
-        document.getElementsByClassName(".copyright").innerHTML = "&copy; Shuli Liu " + today.getFullYear() + ". All rights reserved.";
+        var today = new Date(); 
+        var year = today.getFullYear(); 
+        document.getElementsByClassName(".copyright").innerHTML = "&copy; Shuli Liu " + String(year) + ". All rights reserved.";
         })
         // })
 
