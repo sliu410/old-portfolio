@@ -604,12 +604,12 @@
 			margin: 0.5em 0 0 0;
 		}
 		
-		#logo .image
-		{
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
+		/*#logo .image*/
+		/*{*/
+		/*	position: absolute;*/
+		/*	left: 0;*/
+		/*	top: 0;*/
+		/*}*/
 	
 	#nav
 	{
