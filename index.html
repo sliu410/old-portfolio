@@ -688,9 +688,9 @@
     <div id="footer">
         <!-- Copyright -->
 
-        <ul class="copyright">
+        <p class="copyright">
             <!--<li>&copy; Shuli Liu 2015. All rights reserved.</li>-->
-        </ul>
+        </p>
     </div>
     <script>
         $(window).load(function(){
@@ -712,7 +712,7 @@
         
         //updating the copyright automatically
         var today = new Date();
-        $(".copyright").document.write("<li>&copy; Shuli Liu " + today.getFullYear() + ". All rights reserved.</li>");
+        document.getElementsByClassName(".copyright").innerHTML = "&copy; Shuli Liu " + today.getFullYear() + ". All rights reserved.";
         })
         // })
 
